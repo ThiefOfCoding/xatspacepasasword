@@ -1,0 +1,94 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://xatimg.com/image/WzwNTGw4hSF8.gif); /* Set your image URL here */
+  background-size: cover;  /* Ensure the image covers the full page */
+  background-position: center center;  /* Center the image */
+  background-attachment: fixed;  /* Keep the image fixed as the user scrolls */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Password Entry */
+.password-container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.password-container input {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.password-container button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #0078D4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.password-container button:hover {
+  background-color: #005a8c;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Image Gallery */
+.image-gallery {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+.gallery-images img {
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .password-container {
+    width: 90%;
+    margin: 20px;
+  }
+
+  .gallery-images img {
+    max-width: 120px;
+    height: 120px;
+  }
+}
